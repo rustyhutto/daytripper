@@ -1,3 +1,5 @@
-$(document).ready(function() {
-  console.log(textToSpeech(getWikipediaOverview(getCityState())))
+$(function() {
+    $("#launch").on("click", function() {
+        reverseGeocodeLatLng(GEOCODER, LAT_LONG)
+    })
 });

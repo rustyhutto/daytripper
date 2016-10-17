@@ -1,3 +1,3 @@
-function textToSpeech(input) {
-  return "converted " + input + " to speech"
+function readText(text) {
+    responsiveVoice.speak(text)
 }
