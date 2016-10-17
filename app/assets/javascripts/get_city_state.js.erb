@@ -23,7 +23,8 @@ function handleAddresses(addresses, cb) {
     } else if (state === "AR") {
         image = 'arkansas.png'
     } else if (state === "CA") {
-        $('body').css('background-image', 'asset-url("california.png")');
+        $('body').css('background', "url(assets/california.png)");
+        // $('body').css('background', '#333');
         console.log('hitting ca');
     } else if (state === "CO") {
         image = 'colorado.png'
