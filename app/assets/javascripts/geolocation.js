@@ -1,16 +1,15 @@
 function initMap() {
     // making new geocoder
-    var geocoder = new google.maps.Geocoder;
+    GEOCODER = new google.maps.Geocoder;
 
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
+            LAT_LONG = {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
             };
-            // geocodeLatLng(geocoder, pos);
-            console.log(geocoder);
+            console.log("geoencoder and postion ready!")
         });
     } else {
         // Browser doesn't support Geolocation
@@ -18,8 +17,3 @@ function initMap() {
     }
 }
 
-$(function() {
-    $("#launch").on("click", function() {
-        initMap();
-    })
-});
