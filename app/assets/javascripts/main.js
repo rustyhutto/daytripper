@@ -1,3 +1,3 @@
-$(document).ready(function() {
-  console.log(textToSpeech(getWikipediaOverview(getCityState())))
-});
+// $(document).ready(function() {
+//   console.log(textToSpeech(getWikipediaOverview(getCityState())))
+// });
