@@ -8,5 +8,6 @@ function queryWikipedia(query) {
     }).done(function(response) {
         console.log("sending to TTS")
         $(".container").html(response)
+        readText(response)
     });
 }
