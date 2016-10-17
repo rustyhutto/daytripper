@@ -1,0 +1,35 @@
+function reverseGeocodeLatLng(geocoder, pos) {
+    var latlng = { lat: parseFloat(pos.lat), lng: parseFloat(pos.lng) };
+    geocoder.geocode({ 'location': latlng }, function(results, status) {
+        if (status === 'OK') {
+            handleAddresses(results, queryWikipedia);
+        }
+    });
+}
+
+function handleAddresses(addresses, cb) {
+    var formattedAddress = addresses[0].formatted_address;
+    var city = formattedAddress.split(", ")[1]
+    var state = formattedAddress.split(", ")[2].split(" ")[0]
+    var cityState = city + ", " + state
+    cb(cityState)
+    console.log(state);
+    if (state === "AL") {
+        $('body').css(background-image, asset-url('alabama.png'));
+    } else if (state === "AK") {
+        image = 'alaska.png'
+    } else if (state === "AZ") {
+        image = 'arizona.png'
+    } else if (state === "AR") {
+        image = 'arkansas.png'
+    } else if (state === "CA") {
+        $('body').css('background-image', 'asset-url("california.png")');
+        console.log('hitting ca');
+    } else if (state === "CO") {
+        image = 'colorado.png'
+    } else if (state === "CT") {
+        image = 'connecticut.png'
+    } else if (state === "CT") {
+        image = 'connecticut.png'
+    } 
+}
