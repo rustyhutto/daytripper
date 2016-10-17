@@ -13,9 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+
 body {
-  background-image: asset-url("texas.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.name {
+  font-family: "Reenie Beanie" !important;
+  font-size: 60px !important;
+  font-weight: bold !important;
 }
