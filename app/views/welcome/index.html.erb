@@ -1,7 +1,7 @@
 <h1 class="name">Daytripper</h1>
 <%= form_tag("/search", method: "get") do %>
     <%= label_tag(:search, "Search for:") %>
-    <%= text_field_tag(:search) %>
+    <%= text_field_tag(:search, placeholder="e.g. Missoula, MT")%>
     <%= submit_tag("Search") %>
 <% end %>
 <!-- <button id="launch">Submit</button> -->
