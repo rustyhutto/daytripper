@@ -18,7 +18,7 @@ function reverseGeocode(pos) {
       url: queryUrl
   }).done(function(response) {
     console.log(response)
-    parseAddress(response)
+    parseAddress(response, queryWikipedia)
   });
 
 }
