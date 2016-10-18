@@ -1,23 +1,14 @@
-// function reverseGeocodeLatLng(geocoder, pos) {
-//     var latlng = { lat: parseFloat(pos.lat), lng: parseFloat(pos.lng) };
-//     geocoder.geocode({ 'location': latlng }, function(results, status) {
-//         if (status === 'OK') {
-//             handleAddresses(results, queryWikipedia);
-//         }
-//     });
-// }
-
 function reverseGeocode(pos) {
-  console.log(pos)
+  // console.log(pos)
   var lat = pos.lat
   var long = pos.long
   var query = lat + "," + long
-  console.log(query)
+  // console.log(query)
   var queryUrl = "https://dt-geocoder.herokuapp.com/reverse_geocode?params=" + query
   $.ajax({
       url: queryUrl
   }).done(function(response) {
-    console.log(response)
+    // console.log(response)
     parseAddress(response, queryWikipedia)
   });
 
@@ -27,9 +18,9 @@ function parseAddress(address, cb) {
     var city = address.split(", ")[1]
     var state = address.split(", ")[2].split(" ")[0]
     var cityState = city + ", " + state
-    console.log(cityState)
+    // console.log(cityState)
     cb(cityState)
-    console.log(state);
+    // console.log(state);
     if (state === "AL") {
         $('body').css('background', "url(assets/alabama.png)");
     } else if (state === "AK") {
