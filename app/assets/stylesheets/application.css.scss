@@ -16,12 +16,17 @@
 
 
 body {
+  background-image: asset-url("default.png");
+  background-size: 100%;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  font-family: "Arial" !important;
+  
 }
 
 .name {
   font-family: "Reenie Beanie" !important;
-  font-size: 60px !important;
+  font-size: 80px !important;
   font-weight: bold !important;
+  text-align: center;
 }
