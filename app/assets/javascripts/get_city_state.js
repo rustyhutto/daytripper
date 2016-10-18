@@ -9,6 +9,17 @@
 
 function reverseGeocode(pos) {
   console.log(pos)
+  var lat = pos.lat
+  var long = pos.long
+  var query = lat + "," + long
+  console.log(query)
+  var queryUrl = "https://dt-geocoder.herokuapp.com/reverse_geocode?params=" + query
+  $.ajax({
+      url: queryUrl
+  }).done(function(response) {
+    console.log(response)
+  });
+
 }
 
 function handleAddresses(addresses, cb) {

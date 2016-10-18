@@ -2,7 +2,7 @@ if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
         POS = {
             lat: position.coords.latitude,
-            lng: position.coords.longitude
+            long: position.coords.longitude
         };
         console.log("POS ready!")
     });
