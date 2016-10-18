@@ -15,7 +15,7 @@
 
   <body>
     <%= yield %>
-    <script id="text" async defer
+    <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['AUTH_KEY']%>&callback=initMap">
     </script>
   </body>
