@@ -18,15 +18,16 @@ function reverseGeocode(pos) {
       url: queryUrl
   }).done(function(response) {
     console.log(response)
+    parseAddress(response)
   });
 
 }
 
-function handleAddresses(addresses, cb) {
-    var formattedAddress = addresses[0].formatted_address;
-    var city = formattedAddress.split(", ")[1]
-    var state = formattedAddress.split(", ")[2].split(" ")[0]
+function parseAddress(address, cb) {
+    var city = address.split(", ")[1]
+    var state = address.split(", ")[2].split(" ")[0]
     var cityState = city + ", " + state
+    console.log(cityState)
     cb(cityState)
     console.log(state);
     if (state === "AL") {
