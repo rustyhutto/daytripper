@@ -1,10 +1,14 @@
-function reverseGeocodeLatLng(geocoder, pos) {
-    var latlng = { lat: parseFloat(pos.lat), lng: parseFloat(pos.lng) };
-    geocoder.geocode({ 'location': latlng }, function(results, status) {
-        if (status === 'OK') {
-            handleAddresses(results, queryWikipedia);
-        }
-    });
+// function reverseGeocodeLatLng(geocoder, pos) {
+//     var latlng = { lat: parseFloat(pos.lat), lng: parseFloat(pos.lng) };
+//     geocoder.geocode({ 'location': latlng }, function(results, status) {
+//         if (status === 'OK') {
+//             handleAddresses(results, queryWikipedia);
+//         }
+//     });
+// }
+
+function reverseGeocode(pos) {
+  console.log(pos)
 }
 
 function handleAddresses(addresses, cb) {
@@ -114,5 +118,5 @@ function handleAddresses(addresses, cb) {
         $('body').css('background', "url(assets/wisconsin.png)");
     }  else {
         $('body').css('background', "url(assets/wyoming.png)");
-    }      
+    }
 }
