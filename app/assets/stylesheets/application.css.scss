@@ -17,11 +17,12 @@
 
 body {
   background-image: asset-url("default.png");
-  background-size: 100%;
   background-repeat: no-repeat !important;
-  background-size: cover !important;
-  font-family: "Arial" !important;
+  /*?\background-size: cover !important;*/
+  font-family: "Helvetica" !important;
   text-align: center;
+  font-size: 17px !important;
+  background-size: 100% !important;
   
 }
 
@@ -32,3 +33,7 @@ body {
   text-align: center;
   margin-top: 75px;
 }
+
+/*#text {
+  font-size: 17px !important;
+}*/
