@@ -1,5 +1,5 @@
 function queryWikipedia(query) {
-    // console.log("querying wikipedia for: " + query)
+    console.log("querying wikipedia for: " + query)
     var re = / /g
     var formattedQuery = query.replace(re, "_")
     var queryUrl = "https://query-wikipedia.herokuapp.com/?params=" + formattedQuery
@@ -11,3 +11,12 @@ function queryWikipedia(query) {
         readText(response)
     });
 }
+
+$(function() {
+    $("#search-button").on("click", function(e) {
+        e.preventDefault();
+        // debugger
+        var searchQuery = $("#search").val();
+        queryWikipedia(searchQuery);
+    })
+});
