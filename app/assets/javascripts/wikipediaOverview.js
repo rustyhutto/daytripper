@@ -16,7 +16,7 @@ $(function() {
     $("#search-button").on("click", function(e) {
         e.preventDefault();
         // debugger
-        var searchQuery = $("#search").val();
+        var searchQuery = $("#search-field").val();
         queryWikipedia(searchQuery);
     })
 });
