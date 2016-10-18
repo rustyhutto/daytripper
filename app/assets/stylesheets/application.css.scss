@@ -14,8 +14,8 @@
  *= require_self
  */
 
-.container {
-  height: 1220px;
+.text-container {
+  height: 1226px;
   overflow: auto;
 }
 
@@ -25,9 +25,10 @@ body {
   /*?\background-size: cover !important;*/
   font-family: "Helvetica" !important;
   text-align: center;
-  font-size: 17px !important;
+  font-size: 18px !important;
   background-size: 100% !important;
   overflow: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .name {
@@ -36,6 +37,12 @@ body {
   font-weight: bold !important;
   text-align: center;
   margin-top: 75px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 30px !important;
+  }
 }
 
 /*#text {
