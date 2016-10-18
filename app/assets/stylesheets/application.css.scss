@@ -14,14 +14,21 @@
  *= require_self
  */
 
+.text-container {
+  height: 1226px;
+  overflow: auto;
+}
 
 body {
   background-image: asset-url("default.png");
-  background-size: 100%;
   background-repeat: no-repeat !important;
-  background-size: cover !important;
-  font-family: "Arial" !important;
-  
+  /*?\background-size: cover !important;*/
+  font-family: "Helvetica" !important;
+  text-align: center;
+  font-size: 18px !important;
+  background-size: 100% !important;
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .name {
@@ -29,4 +36,15 @@ body {
   font-size: 80px !important;
   font-weight: bold !important;
   text-align: center;
+  margin-top: 75px;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 30px !important;
+  }
+}
+
+/*#text {
+  font-size: 17px !important;
+}*/
