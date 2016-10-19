@@ -1,9 +1,13 @@
 <h1 class="name">Daytripper</h1>
 
-<%= form_tag("/search", method: "get", id: "search-form") do %>
-    <%= text_field_tag(:search, nil, {id: "search-field"}) %>
-    <%= submit_tag("Search", id: "search-button") %>
-<% end %>
 <div id="loading"></div>
 <input id="launch" type="submit" class="btn btn-info" value="Get Info">
+<br>
+<div id="search-bar">
+    <%= form_tag("/search", method: "get", id: "search-form") do %>
+        <%= text_field_tag(:search, nil, {id: "search-field"}) %>
+        <%= submit_tag("Search", id: "search-button") %>
+    <% end %>
+</div>
+<img src="assets/search_icon.png" id="search-icon">
 <div class="container text-container"></div>
