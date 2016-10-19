@@ -1,5 +1,4 @@
 <h1 class="name">Daytripper</h1>
-<p>an app that tells you the history for your current location</p>
 <div id="loading"></div><input id="launch" type="submit" class="btn btn-info" value="Begin">
 <%= form_tag("/search", method: "get", id: "search-form") do %>
     <%= text_field_tag(:search, nil, {id: "search-field"}) %>
