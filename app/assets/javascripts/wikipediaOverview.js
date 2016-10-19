@@ -8,8 +8,8 @@ function queryWikipedia(query) {
     var re = / /g
     var formattedQuery = sansUs.replace(re, "_")
     console.log("formattedQuery going to query-wikipedia: " + formattedQuery)
-    // var queryUrl = "https://query-wikipedia.herokuapp.com/?params=" + formattedQuery
-    var queryUrl = "https://87c95f82.ngrok.io/?params=" + formattedQuery
+    var queryUrl = "https://query-wikipedia.herokuapp.com/?params=" + formattedQuery
+    // var queryUrl = "https://87c95f82.ngrok.io/?params=" + formattedQuery
     $.ajax({
         url: queryUrl
     }).done(function(response) {
