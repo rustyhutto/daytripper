@@ -1,16 +1,16 @@
 $(function() {
     window.onload = function onLoad() {
         var circle = new ProgressBar.Circle('#loading', {
-            color: '#33A532',
+            color: '#A9A9A9',
             strokeWidth: 3,
             trailWidth: 1,
-            duration: 4000,
+            duration: 4425,
             easing: 'easeInOut',
             text: {
                 // autoStyleContainer: false
             },
-            from: { color: '#F9152F', width: 1 },
-            to: { color: '#33A532', width: 4 },
+            from: { color: '#F8F8FF', width: 1 },
+            to: { color: '#A9A9A9', width: 4 },
             // Set default step function for all animate calls
             step: function(state, circle) {
                 circle.path.setAttribute('stroke', state.color);
