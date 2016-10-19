@@ -3,11 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #launch {
     opacity: 0.7;
-    background-color: lightgray;
+    background-color: gray;
     color: white !important;
     position: relative;
     border: gray;
     margin-bottom: 75px !important;
     margin-top: 15px;
     height: 44px !important;
+}
+
+#search-field {
+    opacity: .8;
+    border-radius: 8px;
 }
