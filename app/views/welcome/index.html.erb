@@ -1,11 +1,9 @@
 <h1 class="name">Daytripper</h1>
 
 <%= form_tag("/search", method: "get", id: "search-form") do %>
-    <%= label_tag(:search, "Search for:") %>
     <%= text_field_tag(:search, nil, {id: "search-field"}) %>
     <%= submit_tag("Search", id: "search-button") %>
 <% end %>
-
-<!-- <button id="launch">Submit</button> -->
+<div id="loading"></div>
 <input id="launch" type="submit" class="btn btn-info" value="Get Info">
 <div class="container text-container"></div>
