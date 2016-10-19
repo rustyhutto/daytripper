@@ -32,11 +32,11 @@ $(function() {
     };
 
     $("#launch").on("click", function() {
-        $("#loading").toggle();
+        $("#loading").hide();
     })
 
     $("#search-button").on("click", function() {
-        $("#loading").toggle();
+        $("#loading").hide();
     })
 
 });
