@@ -30,4 +30,13 @@ $(function() {
 
         circle.animate(1);
     };
+
+    $("#launch").on("click", function() {
+        $("#loading").toggle();
+    })
+
+    $("#search-button").on("click", function() {
+        $("#loading").toggle();
+    })
+
 });
