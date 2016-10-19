@@ -1,11 +1,15 @@
 function queryWikipedia(query) {
-    console.log("querying wikipedia for: " + query)
+    console.log("******************************")
+    console.log("query recieved: " + query)
     var usRe = /, United States/
     var sansUs = query.replace(usRe, "")
+    console.log("sansUs: " + query)
 
     var re = / /g
     var formattedQuery = sansUs.replace(re, "_")
-    var queryUrl = "https://query-wikipedia.herokuapp.com/?params=" + formattedQuery
+    console.log("formattedQuery going to query-wikipedia: " + formattedQuery)
+    // var queryUrl = "https://query-wikipedia.herokuapp.com/?params=" + formattedQuery
+    var queryUrl = "https://87c95f82.ngrok.io/?params=" + formattedQuery
     $.ajax({
         url: queryUrl
     }).done(function(response) {
@@ -20,6 +24,7 @@ $(function() {
         e.preventDefault();
         // debugger
         var searchQuery = $("#search-field").val();
+        console.log("searchQuery from form: " + searchQuery)
         queryWikipedia(searchQuery);
     })
 });
