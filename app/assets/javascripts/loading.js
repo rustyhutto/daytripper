@@ -1,5 +1,6 @@
 $(function() {
     $("#nav-icon").hide();
+    $("#pause").hide();
     window.onload = function onLoad() {
         var circle = new ProgressBar.Circle('#loading', {
             color: '#A9A9A9',
@@ -11,7 +12,7 @@ $(function() {
                 // autoStyleContainer: false
             },
             from: { color: '#F8F8FF', width: 1 },
-            to: { color: '#A9A9A9', width: 4 },
+            to: { color: '#4B74B9', width: 4 },
             // Set default step function for all animate calls
             step: function(state, circle) {
                 circle.path.setAttribute('stroke', state.color);
@@ -25,7 +26,8 @@ $(function() {
                 }
                 if (value === 100) {
                     // changeButtonColor();
-                    $("#nav-icon").show();
+                    $("#nav-icon").fadeIn();
+                    circle.setText('')
                 }
             }
 
@@ -40,10 +42,12 @@ $(function() {
     })
 
     $("#search-button").on("click", function() {
+        $("#pause").fadeIn();
         $("#loading").hide();
     })
 
     $("#nav-icon").on("click", function() {
+        $("#pause").fadeIn();
         responsiveVoice.speak(" ");
         reverseGeocode(POS)
         $("#nav-icon").hide();

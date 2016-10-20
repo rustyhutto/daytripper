@@ -1,8 +1,11 @@
 <h1 class="name">Daytripper</h1>
 
-<img id="nav-icon" src="assets/navigation_icon.png">
-<div id="loading"></div>
-
+<div id="nav-load">
+    <div id="loading"></div>
+    <div id="nav-icon">
+        <img src="assets/navigation_icon.png" height="150" width="150">
+    </div>
+</div>
 <br>
 <img src="assets/search_icon.png" id="search-icon">
 <div id="search-bar">
@@ -12,9 +15,9 @@
     <% end %>
 </div>
 
-<button type="button" onclick="responsiveVoice.pause();">Pause</button>
+<button id="pause" type="button" onclick="responsiveVoice.pause();">Pause</button>
 <script>setTimeout(responsiveVoice.speak(" "),500);
-</script>
+</script> 
 
 
 <script type="text/javascript"> 
