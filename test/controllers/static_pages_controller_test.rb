@@ -1,9 +1,8 @@
 require "test_helper"
 
-describe StaticPagesController do
-  it "should get home" do
+class StaticPagesControllerTest < ActionDispatch::IntegrationTest
+  test "should get home" do
     get static_pages_home_url
-    value(response).must_be :success?
+    assert_response :success
   end
-
 end
