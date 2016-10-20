@@ -44,6 +44,7 @@ $(function() {
     $("#search-button").on("click", function() {
         $("#pause").fadeIn();
         $("#loading").hide();
+        $("#nav-icon").hide();
     })
 
     $("#nav-icon").on("click", function() {
