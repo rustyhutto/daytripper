@@ -15,7 +15,7 @@
  */
 
 .text-container {
-    height: 1226px;
+    height: 762px;
     overflow: auto;
 }
 
@@ -33,7 +33,7 @@ body {
 
 .name {
     font-family: "Reenie Beanie" !important;
-    font-size: 80px !important;
+    font-size: 128px !important;
     text-align: center;
     margin-top: 75px;
     -webkit-font-smoothing: antialiased;
@@ -45,9 +45,13 @@ body {
     }
 }
 
-#loading {
-    height: 500px;
+#nav-load {
     position: relative;
+    margin-top: 20%;
+}
+
+#loading {
+    height: 250px;
     top: 20%;
     z-index: -1;
 }
@@ -55,6 +59,15 @@ body {
 #loading>svg {
     padding: 20px;
     height: 100%;
+}
+
+#octo {
+    position: absolute;
+    // display: block;
+    // margin-top: 83%;
+    // margin-left: 86%;
+    left: 10px;
+    bottom: 3px;
 }
 
 
