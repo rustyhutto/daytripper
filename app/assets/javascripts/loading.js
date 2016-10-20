@@ -44,6 +44,7 @@ $(function() {
     })
 
     $("#nav-icon").on("click", function() {
+        responsiveVoice.speak(" ");
         reverseGeocode(POS)
         $("#nav-icon").hide();
     })
