@@ -1,18 +1,21 @@
 <h1 class="name">Daytripper</h1>
-<div id="loading"></div><input id="launch" type="submit" class="btn btn-info" value="Begin">
-<%= form_tag("/search", method: "get", id: "search-form") do %>
-    <%= text_field_tag(:search, nil, {id: "search-field"}) %>
-    <%= submit_tag("Search", id: "search-button") %>
-<% end %>
+
+<img id="nav-icon" src="assets/navigation_icon.png">
+<div id="loading"></div>
+
+<br>
+<img src="assets/search_icon.png" id="search-icon">
+<div id="search-bar">
+    <%= form_tag("/search", method: "get", id: "search-form") do %>
+        <%= text_field_tag(:search, nil, {id: "search-field"}) %>
+        <%= submit_tag("Search", id: "search-button") %>
+    <% end %>
+</div>
 
 <button type="button" onclick="responsiveVoice.pause();">Pause</button>
-# play button
-
 <script>setTimeout(responsiveVoice.speak(" "),500);
 </script>
 
-
 <div class="container text-container"></div>
-
 
 <iframe src="https://embed.spotify.com/?uri=spotify:track:3djNBlI7xOggg7pnsOLaNm&theme=white" width="0" height="0" frameborder="0" allowtransparency="true"></iframe><br><br>

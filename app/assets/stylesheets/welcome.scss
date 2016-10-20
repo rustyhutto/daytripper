@@ -10,10 +10,29 @@
     margin-bottom: 75px !important;
     margin-top: 15px;
     height: 44px !important;
+    position: absolute;
+    top: 20%;
 }
 
 #search-field {
     border-radius: 8px;
 }
 
+#search-icon {
+    background: none;
+}
 
+#search-icon::hover {
+    background: blue !important;
+}
+
+#nav-icon {
+    z-index: 99;
+    width: 350px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    margin: 0 auto;
+}
