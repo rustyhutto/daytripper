@@ -22,4 +22,5 @@ function parseAddress(address, cb) {
     cb(cityState)
     // console.log(state);
     setPic(state.toLowerCase());
+    setPlaylist(state.toLowerCase());
 }

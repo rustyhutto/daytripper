@@ -28,6 +28,7 @@ $(function() {
         var state = searchQuery.split(", ")[1];
         console.log(state);
         setPic(state.toLowerCase());
+        setPlaylist(state.toLowerCase());
         queryWikipedia(searchQuery);
     })
 });
