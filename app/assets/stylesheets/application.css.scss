@@ -45,9 +45,12 @@ body {
     }
 }
 
-#loading {
-    height: 500px;
+#nav-load {
     position: relative;
+}
+
+#loading {
+    height: 300px;
     top: 20%;
     z-index: -1;
 }
