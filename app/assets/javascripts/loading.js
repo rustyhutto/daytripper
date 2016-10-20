@@ -22,7 +22,9 @@ $(function() {
                 } else {
                     circle.setText(value);
                 }
-
+                if (value === 100) {
+                    changeButtonColor();
+                }
             }
 
 
