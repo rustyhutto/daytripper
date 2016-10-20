@@ -24,10 +24,8 @@ $(function() {
                     circle.setText(value);
                 }
                 if (value === 100) {
-                    changeButtonColor();
+                    // changeButtonColor();
                     $("#nav-icon").show();
-
-
                 }
             }
 
@@ -37,12 +35,17 @@ $(function() {
         circle.animate(1);
     };
 
-    $("#launch").on("click", function() {
+    $("#nav-icon").on("click", function() {
         $("#loading").hide();
     })
 
     $("#search-button").on("click", function() {
         $("#loading").hide();
+    })
+
+    $("#nav-icon").on("click", function() {
+        reverseGeocode(POS)
+        $("#nav-icon").hide();
     })
 
 });
