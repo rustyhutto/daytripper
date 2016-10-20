@@ -1,4 +1,5 @@
 $(function() {
+    $("#nav-icon").hide();
     window.onload = function onLoad() {
         var circle = new ProgressBar.Circle('#loading', {
             color: '#A9A9A9',
@@ -24,6 +25,9 @@ $(function() {
                 }
                 if (value === 100) {
                     changeButtonColor();
+                    $("#nav-icon").show();
+
+
                 }
             }
 

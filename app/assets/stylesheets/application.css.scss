@@ -47,7 +47,9 @@ body {
 
 #loading {
     height: 500px;
-    position: absolute;
+    position: relative;
+    top: 20%;
+    z-index: -1;
 }
 
 #loading>svg {
