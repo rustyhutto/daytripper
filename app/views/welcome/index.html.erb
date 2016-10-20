@@ -1,11 +1,34 @@
 <h1 class="name">Daytripper</h1>
 
-<%= form_tag("/search", method: "get", id: "search-form") do %>
-    <%= label_tag(:search, "Search for:") %>
-    <%= text_field_tag(:search, nil, {id: "search-field"}) %>
-    <%= submit_tag("Search", id: "search-button") %>
-<% end %>
+<img id="nav-icon" src="assets/navigation_icon.png">
+<div id="loading"></div>
 
-<!-- <button id="launch">Submit</button> -->
-<input id="launch" type="submit" class="btn btn-info" value="Get Info">
+<br>
+<img src="assets/search_icon.png" id="search-icon">
+<div id="search-bar">
+    <%= form_tag("/search", method: "get", id: "search-form") do %>
+        <%= text_field_tag(:search, nil, {id: "search-field"}) %>
+        <%= submit_tag("Search", id: "search-button") %>
+    <% end %>
+</div>
+
+<button type="button" onclick="responsiveVoice.pause();">Pause</button>
+<script>setTimeout(responsiveVoice.speak(" "),500);
+</script>
+
+
+<script type="text/javascript"> 
+    function read(){
+        responsiveVoice.speak(" ");
+    }
+    setTimeout(function(){ read(); }, 2000);
+</script>
+
+
 <div class="container text-container"></div>
+
+
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:3djNBlI7xOggg7pnsOLaNm&theme=white" width="0" height="0" frameborder="0" allowtransparency="true"></iframe><br><br>
+
+<iframe id="music-widget" src="https://embed.spotify.com/?uri=spotify:user:spotifyenespa%C3%B1ol:playlist:4mDfcMR5odqShAEpXT1TY1" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>

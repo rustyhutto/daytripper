@@ -15,35 +15,48 @@
  */
 
 .text-container {
-  height: 1226px;
-  overflow: auto;
+    height: 1226px;
+    overflow: auto;
 }
 
 body {
-  background-image: asset-url("default.png");
-  background-repeat: no-repeat !important;
-  /*?\background-size: cover !important;*/
-  font-family: "Helvetica" !important;
-  text-align: center;
-  font-size: 18px !important;
-  background-size: 100% !important;
-  overflow: auto;
-  -webkit-font-smoothing: antialiased;
+    background-image: asset-url("default.jpeg");
+    background-repeat: no-repeat !important;
+    /*?\background-size: cover !important;*/
+    font-family: "Helvetica" !important;
+    text-align: center;
+    font-size: 18px !important;
+    background-size: 100% !important;
+    overflow: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 .name {
-  font-family: "Reenie Beanie" !important;
-  font-size: 80px !important;
-  font-weight: bold !important;
-  text-align: center;
-  margin-top: 75px;
+    font-family: "Reenie Beanie" !important;
+    font-size: 80px !important;
+    text-align: center;
+    margin-top: 75px;
+    -webkit-font-smoothing: antialiased;
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 30px !important;
-  }
+    body {
+        font-size: 30px !important;
+    }
 }
+
+#loading {
+    height: 500px;
+    position: relative;
+    top: 20%;
+    z-index: -1;
+}
+
+#loading>svg {
+    padding: 20px;
+    height: 100%;
+}
+
 
 /*#text {
   font-size: 17px !important;
