@@ -1,4 +1,5 @@
 $(function() {
+    $("#nav-icon").hide();
     window.onload = function onLoad() {
         var circle = new ProgressBar.Circle('#loading', {
             color: '#A9A9A9',
@@ -22,7 +23,10 @@ $(function() {
                 } else {
                     circle.setText(value);
                 }
-
+                if (value === 100) {
+                    // changeButtonColor();
+                    $("#nav-icon").show();
+                }
             }
 
 
@@ -31,12 +35,17 @@ $(function() {
         circle.animate(1);
     };
 
-    $("#launch").on("click", function() {
+    $("#nav-icon").on("click", function() {
         $("#loading").hide();
     })
 
     $("#search-button").on("click", function() {
         $("#loading").hide();
+    })
+
+    $("#nav-icon").on("click", function() {
+        reverseGeocode(POS)
+        $("#nav-icon").hide();
     })
 
 });
