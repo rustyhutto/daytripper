@@ -11,7 +11,7 @@ $(function() {
                 // autoStyleContainer: false
             },
             from: { color: '#F8F8FF', width: 1 },
-            to: { color: '#A9A9A9', width: 4 },
+            to: { color: '#4B74B9', width: 4 },
             // Set default step function for all animate calls
             step: function(state, circle) {
                 circle.path.setAttribute('stroke', state.color);
@@ -25,7 +25,8 @@ $(function() {
                 }
                 if (value === 100) {
                     // changeButtonColor();
-                    $("#nav-icon").show();
+                    $("#nav-icon").fadeIn();
+                    circle.setText('')
                 }
             }
 
