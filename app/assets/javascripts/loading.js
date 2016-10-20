@@ -1,5 +1,6 @@
 $(function() {
     $("#nav-icon").hide();
+    $("#pause").hide();
     window.onload = function onLoad() {
         var circle = new ProgressBar.Circle('#loading', {
             color: '#A9A9A9',
@@ -41,10 +42,12 @@ $(function() {
     })
 
     $("#search-button").on("click", function() {
+        $("#pause").fadeIn();
         $("#loading").hide();
     })
 
     $("#nav-icon").on("click", function() {
+        $("#pause").fadeIn();
         responsiveVoice.speak(" ");
         reverseGeocode(POS)
         $("#nav-icon").hide();
