@@ -1,34 +1,40 @@
-<h1 class="name">Daytripper</h1>
+<div class="box">
+    <div id="search-bar">
+        <img src="assets/search-icon.png" id="search-icon">
+        <%= form_tag("/search", method: "get", id: "search-form") do %>
+            <%= text_field_tag(:search, nil, {id: "search-field"}) %>
+            <%= submit_tag("Search", id: "search-button") %>
+        <% end %>
+    </div>
+    <h1 class="name">Daytripper</h1>
 
-<img id="nav-icon" src="assets/navigation_icon.png">
-<div id="loading"></div>
+    <div id="nav-load">
+        <div id="loading"></div>
+        <div id="nav-icon">
+            <img src="assets/navigation_icon.png" height="150" width="150">
+        </div>
+    </div>
+    <br>
 
-<br>
-<img src="assets/search_icon.png" id="search-icon">
-<div id="search-bar">
-    <%= form_tag("/search", method: "get", id: "search-form") do %>
-        <%= text_field_tag(:search, nil, {id: "search-field"}) %>
-        <%= submit_tag("Search", id: "search-button") %>
-    <% end %>
+    <button id="pause" type="button" onclick="responsiveVoice.pause();">Pause</button>
+    <script>setTimeout(responsiveVoice.speak(" "),500);
+    </script> 
+
+
+    <script type="text/javascript"> 
+        function read(){
+            responsiveVoice.speak(" ");
+        }
+        setTimeout(function(){ read(); }, 2000);
+    </script>
+    <div class="icon">
+        <a id="octo" href="https://github.com/mbigras/daytripper"><img src="assets/github-icon.png" width="100" height="100"></a>
+    </div>
+
+    <div class="container text-container"></div>
+
+
+    <iframe src="https://embed.spotify.com/?uri=spotify:track:3djNBlI7xOggg7pnsOLaNm&theme=white" width="0" height="0" frameborder="0" allowtransparency="true"></iframe><br><br>
+
+    <iframe id="music-widget" src="https://embed.spotify.com/?uri=spotify:user:spotifyenespa%C3%B1ol:playlist:4mDfcMR5odqShAEpXT1TY1" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
 </div>
-
-<button type="button" onclick="responsiveVoice.pause();">Pause</button>
-<script>setTimeout(responsiveVoice.speak(" "),500);
-</script>
-
-
-<script type="text/javascript"> 
-    function read(){
-        responsiveVoice.speak(" ");
-    }
-    setTimeout(function(){ read(); }, 2000);
-</script>
-
-
-<div class="container text-container"></div>
-
-
-
-<iframe src="https://embed.spotify.com/?uri=spotify:track:3djNBlI7xOggg7pnsOLaNm&theme=white" width="0" height="0" frameborder="0" allowtransparency="true"></iframe><br><br>
-
-<iframe id="music-widget" src="https://embed.spotify.com/?uri=spotify:user:spotifyenespa%C3%B1ol:playlist:4mDfcMR5odqShAEpXT1TY1" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
