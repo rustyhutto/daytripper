@@ -46,10 +46,12 @@ body {
 }
 
 #loading {
-    height: 100px;
+    height: 500px;
+    position: absolute;
 }
 
 #loading>svg {
+    padding: 20px;
     height: 100%;
 }
 
