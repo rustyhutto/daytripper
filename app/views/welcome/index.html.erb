@@ -1,6 +1,5 @@
 <h1 class="name">Daytripper</h1>
 
-
 <img id="nav-icon" src="assets/navigation_icon.png">
 <div id="loading"></div>
 
@@ -12,4 +11,11 @@
         <%= submit_tag("Search", id: "search-button") %>
     <% end %>
 </div>
+
+<button type="button" onclick="responsiveVoice.pause();">Pause</button>
+<script>setTimeout(responsiveVoice.speak(" "),500);
+</script>
+
 <div class="container text-container"></div>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:3djNBlI7xOggg7pnsOLaNm&theme=white" width="0" height="0" frameborder="0" allowtransparency="true"></iframe><br><br>
