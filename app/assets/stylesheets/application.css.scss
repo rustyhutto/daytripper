@@ -70,6 +70,17 @@ body {
     bottom: 3px;
 }
 
+#pause {
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    opacity: .6;
+}
+
+// #pause:hover {
+//     background-color: gray;
+//     color: white;
+// }
 
 /*#text {
   font-size: 17px !important;
