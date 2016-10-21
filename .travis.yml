@@ -1,6 +1,9 @@
 language: ruby
+before_install:
+  - bundle install
+  - bin/rails db:create
+  - bin/rails db:migrate
 rvm:
   - 2.3.1
 script: bin/rails test
 cache: bundler
-
