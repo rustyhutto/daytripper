@@ -5,6 +5,7 @@ function setPic(state) {
             break;
         case "ak" || "alaska":
             $('body').css('background', "url(assets/alaska.jpeg)")
+            break;
         case "ar" || "arkansas":
             $('body').css('background', "url(assets/arkansas.jpeg)");
             break;
