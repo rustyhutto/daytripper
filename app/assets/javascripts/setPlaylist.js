@@ -10,7 +10,7 @@ function setPlaylist(state_abbreviation){
             $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:jamespetersson:playlist:3on8jAMhmB90lipa3JrxrE");
             break;
         case "ca" || "california":
-            $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:spotifyenespa%C3%B1ol:playlist:4mDfcMR5odqShAEpXT1TY1");
+            $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:38YqfHXwZP4zEwZT8nS7AJ");
             break;
         case "co" || "colorado":
              $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:spotifyenespa%C3%B1ol:playlist:4mDfcMR5odqShAEpXT1TY1");
@@ -49,7 +49,7 @@ function setPlaylist(state_abbreviation){
             $('body').css('background', "url(assets/kentucky.png)");
             break;
         case "la" || "louisiana":
-            $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:3jz4xwzz6jn3GEsROyviT8");
+            $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:7qmErv8PyDE7Hdz0lkrqJB");
             break;
         case "md" || "maryland":
             $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:3jz4xwzz6jn3GEsROyviT8");
@@ -91,7 +91,7 @@ function setPlaylist(state_abbreviation){
             $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:3jz4xwzz6jn3GEsROyviT8");
             break;
         case "ny" || "new york":
-            $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:3jz4xwzz6jn3GEsROyviT8");
+            $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:5hpgpCk1KDkxmipYWOwnxL");
             break;
         case "nc" || "north carolina":
             $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:3jz4xwzz6jn3GEsROyviT8");
@@ -148,6 +148,6 @@ function setPlaylist(state_abbreviation){
             $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:3jz4xwzz6jn3GEsROyviT8");
             break;
         default:
-            $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:spotifyenespa%C3%B1ol:playlist:4mDfcMR5odqShAEpXT1TY1");
+            $('#music-widget').attr('src', "https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:38YqfHXwZP4zEwZT8nS7AJ");
     }
 }
