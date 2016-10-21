@@ -1,6 +1,8 @@
 <div class="box">
     <div id="search-bar">
+      <div class="wrapper">
         <img src="assets/search-icon.png" id="search-icon">
+      </div>
         <%= form_tag("/search", method: "get", id: "search-form") do %>
             <%= text_field_tag(:search, nil, {id: "search-field"}) %>
             <%= submit_tag("Search", id: "search-button") %>
@@ -18,10 +20,10 @@
 
     <button id="pause" type="button" onclick="responsiveVoice.pause();">Pause</button>
     <script>setTimeout(responsiveVoice.speak(" "),500);
-    </script> 
+    </script>
 
 
-    <script type="text/javascript"> 
+    <script type="text/javascript">
         function read(){
             responsiveVoice.speak(" ");
         }
