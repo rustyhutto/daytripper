@@ -3,7 +3,10 @@ function setPic(state) {
         case "al" || "alabama":
             $('body').css('background', "url(assets/alabama.jpg)");
             break;
-        case "ak" || "arkansas":
+        case "ak" || "alaska":
+            $('body').css('background', "url(assets/alaska.jpeg)")
+            break;
+        case "ar" || "arkansas":
             $('body').css('background', "url(assets/arkansas.jpeg)");
             break;
         case "az" || "arizona":
