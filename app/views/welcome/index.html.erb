@@ -1,6 +1,8 @@
 <div class="box">
     <div id="search-bar">
+      <div class="wrapper">
         <img src="assets/search-icon.png" id="search-icon">
+      </div>
         <%= form_tag("/search", method: "get", id: "search-form") do %>
             <%= text_field_tag(:search, nil, {id: "search-field"}) %>
             <%= submit_tag("Search", id: "search-button") %>
@@ -18,10 +20,10 @@
 
     <button id="pause" type="button" onclick="responsiveVoice.pause();">Pause</button>
     <script>setTimeout(responsiveVoice.speak(" "),500);
-    </script> 
+    </script>
 
 
-    <script type="text/javascript"> 
+    <script type="text/javascript">
         function read(){
             responsiveVoice.speak(" ");
         }
@@ -36,5 +38,5 @@
 
     <iframe src="https://embed.spotify.com/?uri=spotify:track:3djNBlI7xOggg7pnsOLaNm&theme=white" width="0" height="0" frameborder="0" allowtransparency="true"></iframe><br><br>
 
-    <iframe id="music-widget" src="https://embed.spotify.com/?uri=spotify:user:spotifyenespa%C3%B1ol:playlist:4mDfcMR5odqShAEpXT1TY1" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
+    <iframe id="music-widget" src="https://embed.spotify.com/?uri=spotify:user:davehenton:playlist:38YqfHXwZP4zEwZT8nS7AJ" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
 </div>
